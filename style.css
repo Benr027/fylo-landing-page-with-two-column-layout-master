@@ -1,0 +1,427 @@
+@import url("https://fonts.google.com/specimen/Open+Sans");
+@import url("https://fonts.google.com/specimen/Raleway");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  flex-wrap: nowrap !important;
+}
+body {
+  font-family: "Open Sans";
+}
+.navbar {
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.navbar-brand {
+  margin-left: 20px;
+}
+
+.navbar-brand img {
+  height: 30px;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+.row {
+  --bs-gutter-x: 0rem !important;
+}
+.navbar-nav a {
+  color: hsl(238, 22%, 44%) !important;
+  font-family: "Raleway";
+  margin-right: 20px;
+}
+
+.all,
+.productive,
+.access {
+  padding: 35px;
+  color: hsl(243, 87%, 12%);
+}
+.all {
+  margin-bottom: 80px;
+}
+.all h4,
+.productive h1 {
+  font-weight: 800;
+}
+
+.all img {
+  height: 270px;
+}
+
+.all .row,
+.productive .row {
+  justify-content: space-between;
+}
+
+.all .col-6,
+.productive .col-6 {
+  text-align: center;
+}
+
+.productive {
+  background: url(./images/bg-curve-desktop.svg) no-repeat;
+  background-size: 100% 100%;
+  margin-bottom: 50px;
+}
+
+.productive .illu {
+  height: 300px;
+  margin-top: 50px !important;
+}
+
+.productive a {
+  color: hsl(170, 45%, 43%);
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: 1px solid hsl(170, 45%, 43%);
+  padding-bottom: 5px;
+  border-bottom-width: 1px;
+  margin-bottom: 20px;
+}
+.card {
+  padding: 20px;
+  border: 1px solid white !important;
+  border-radius: 15px !important;
+  background-color: white !important;
+  -webkit-box-shadow: 4px 5px 42px -8px #000000;
+  box-shadow: 4px 5px 42px -8px #000000;
+}
+.card .card-img {
+  height: 20px;
+  width: 20px;
+}
+
+.card-body img {
+  height: 50px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.idi {
+  margin-left: 55px;
+  margin-top: -25px;
+  font-size: 10px;
+}
+
+.imi span {
+  font-weight: 900;
+  font-size: 12px;
+}
+
+.access {
+  background-color: hsl(238, 22%, 44%);
+  margin: 0;
+  color: white;
+  padding: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.access .row {
+  justify-content: space-between;
+}
+
+footer {
+  background-color: hsl(243, 87%, 12%);
+  color: white;
+  padding-top: 100px;
+  padding-left: 50px;
+  padding-bottom: 80px;
+}
+
+footer .ji {
+  height: 50px !important;
+  margin-bottom: 20px;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg)
+    brightness(102%) contrast(102%);
+  filter: brightness(0) invert(1);
+}
+
+.ident div {
+  margin-bottom: 20px;
+}
+
+.ident span {
+  margin-left: 10px;
+}
+
+.ico i {
+  margin-right: 10px;
+  background-color: hsl(243, 87%, 12%) !important;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+@media (max-width: 1024px) {
+  .navbar-collapse {
+    display: flex !important;
+  }
+  .navbar-nav {
+    flex-direction: row !important;
+  }
+  .all img {
+    height: 200px;
+  }
+  .all h4,
+  .productive h3 {
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  .all p,
+  .productive p,
+  .productive a {
+    font-size: 12px;
+  }
+
+  .all input {
+    width: 150px;
+    font-size: 10px;
+  }
+  .all button {
+    font-size: 10px;
+    width: 80px;
+    height: 28px;
+  }
+  .productive .illu {
+    height: 200px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+  .card .card-img {
+    height: 15px;
+    width: 15px;
+  }
+
+  .card-body img {
+    height: 30px;
+    border-radius: 50%;
+    margin-top: 20px;
+  }
+  .idi {
+    margin-left: 32px;
+    margin-top: -20px;
+    font-size: 5px;
+  }
+
+  .imi span {
+    font-weight: 500;
+    font-size: 12px;
+  }
+
+  .access h2 {
+    font-size: 20px;
+  }
+  .access button,
+  .access p,
+  .access input {
+    font-size: 12px;
+  }
+  footer .ji {
+    height: 30px !important;
+  }
+  .ident span {
+    margin-left: 5px;
+  }
+  .rien {
+    margin-left: 20px;
+  }
+  footer .row {
+    flex-wrap: nowrap !important;
+  }
+  footer span,
+  footer p {
+    font-size: 13px;
+  }
+  .ico {
+    width: 140px !important;
+  }
+  .ico i {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .all input {
+    width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    margin-left: 20px;
+  }
+
+  .navbar-brand img {
+    height: 20px;
+  }
+
+  .navbar-nav a {
+    margin-right: 15px;
+    font-size: 15px;
+  }
+  .rit,
+  .productive .rt1 {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .all img,
+  .productive .illu {
+    height: 150px;
+    margin-bottom: 20px;
+  }
+  .illustration,
+  .productive .illu {
+    margin-left: 20px;
+    width: 100% !important;
+  }
+  .all h4,
+  .productive h3 {
+    font-weight: 500;
+    font-size: 15px;
+  }
+
+  .all input {
+    width: 150px;
+    font-size: 10px;
+  }
+  .all button {
+    font-size: 10px;
+    width: 80px;
+    height: 28px;
+  }
+  .all p {
+    text-align: center;
+  }
+  .all .col-4,
+  .productive .col-4 {
+    width: 100%;
+  }
+  .form1 {
+    flex-direction: column;
+    text-align: center;
+  }
+  .form1 input,
+  .form1 button {
+    width: 100%;
+  }
+
+  .productive .pa {
+    text-align: justify;
+  }
+  .card-body img {
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 20px;
+  }
+
+  .idi {
+    margin-left: 55px;
+    margin-top: -25px;
+    font-size: 9px !important;
+  }
+  .imi {
+    text-align: left;
+  }
+  .imi span {
+    font-weight: 500;
+    font-size: 12px;
+  }
+
+  .access .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .access .row .col-4 {
+    width: 100%;
+  }
+
+  .access button {
+    width: 100%;
+  }
+
+  footer .rt2,
+  .rowt {
+    flex-direction: column;
+  }
+  footer .col-3 {
+    width: 100%;
+  }
+  .rien {
+    margin-left: 0;
+  }
+  .ico {
+    width: 80% !important;
+    margin-left: 50px;
+  }
+  .productive .illu {
+    height: 100px;
+    width: 200px !important;
+    margin-bottom: 20px;
+  }
+  .col1 {
+    width: 100% !important;
+  }
+}
+
+@media (max-width:320px){
+    .navbar-brand {
+        margin-left: 10px;
+      }
+    
+      .navbar-brand img {
+        height: 15px;
+      }
+    
+      .navbar-nav a {
+        margin-right: 9px;
+        font-size: 10px;
+      }
+      .all img,
+      .productive .illu{
+        height: 100px;
+        margin-bottom: 20px;
+        width: 150px !important;
+      }
+      .card {
+        padding: 5px;
+        box-shadow: 4px 5px 42px -8px #000000;
+      }
+      .card-body img {
+        height: 30px;
+        border-radius: 50%;
+        margin-top: 20px;
+      }
+    
+      .idi {
+        margin-left: 35px;
+        margin-top: -20px;
+        font-size: 8px !important;
+      }
+      .imi {
+        text-align: left;
+      }
+      .imi span {
+        font-weight: 500;
+        font-size: 9px;
+      }
+      .ico {
+        width: 130px !important;
+        margin-left: 15px;
+      }
+    
+      
+}
